@@ -6,3 +6,4 @@
 - ffmpeg está en el sistema para cortes, conversión, extracción de audio, etc.
 - Cuando termines un render, envía el archivo de `out/` al usuario con SendUserFile.
 - Los archivos subidos por el usuario van en `public/`.
+- Para vídeos grandes, el usuario comparte un enlace de Google Drive: descárgalo con `scripts/descargar-drive.sh "<enlace>"` (requiere `drive.google.com` y `drive.usercontent.google.com` permitidos en el acceso de red del entorno).

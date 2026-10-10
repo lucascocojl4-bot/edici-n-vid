@@ -40,3 +40,12 @@ npx remotion render src/index.ts Principal out/mi-video.mp4 \
 - `remotion.config.ts`: usa el Chromium preinstalado del entorno cloud
 - `public/`: tus clips, audios e imágenes
 - `out/`: los renders (no se suben a git)
+
+## Vídeos grandes (más de 30 MB) desde Google Drive
+
+1. Sube el vídeo a Google Drive y compártelo como **"Cualquier persona con el enlace"**.
+2. Pega el enlace en el chat con tus indicaciones.
+3. Claude lo descarga con `scripts/descargar-drive.sh "<enlace>"` a `public/`.
+
+Requiere permitir `drive.google.com` y `drive.usercontent.google.com` en el acceso de red
+del entorno: https://code.claude.com/docs/en/cloud-environments#network-access
