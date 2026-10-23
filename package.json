@@ -7,10 +7,12 @@
     "studio": "remotion studio",
     "render": "remotion render src/index.ts Principal out/video.mp4",
     "render:vertical": "remotion render src/index.ts Vertical out/vertical.mp4",
+    "render:reel": "remotion render src/index.ts Reel out/reel.mp4",
     "still": "remotion still src/index.ts Principal out/miniatura.png",
     "check": "tsc --noEmit"
   },
   "dependencies": {
+    "@fontsource/inter": "^5.3.0",
     "@remotion/cli": "4.0.534",
     "@remotion/media-utils": "4.0.534",
     "react": "19.1.0",
