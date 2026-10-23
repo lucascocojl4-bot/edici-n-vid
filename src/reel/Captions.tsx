@@ -50,6 +50,7 @@ const Key: React.FC<{ text: string; local: number }> = ({ text, local }) => (
   <span
     style={{
       display: "inline-block",
+      textShadow: "none",
       background: `linear-gradient(105deg, #ffffff 0%, #ffffff 40%, #a9dcff 50%, #ffffff 60%, #ffffff 100%)`,
       backgroundSize: "300% 100%",
       backgroundPosition: `${interpolate(local, [0, 0.7], [100, 0], { extrapolateRight: "clamp" })}% 0`,
